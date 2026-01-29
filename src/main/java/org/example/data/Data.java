@@ -8,11 +8,12 @@ import java.util.List;
 
 public class Data {
     private List<String> wordleList;
+    private final String path = "src\\main\\resources\\Wordle.txt";
 
     public List<String> getListWord() {
         if (wordleList == null) {
             try {
-                wordleList = Files.readAllLines(Paths.get("Wordle.txt"));
+                wordleList = Files.readAllLines(Paths.get(path));
                 return wordleList;
             } catch (IOException e) {
                 throw new RuntimeException(e);
