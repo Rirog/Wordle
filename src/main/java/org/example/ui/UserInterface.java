@@ -1,9 +1,6 @@
 package org.example.ui;
 
-import org.example.model.Word;
-
 import java.util.List;
-import java.util.Scanner;
 
 public class UserInterface {
 

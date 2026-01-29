@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Data {
     private List<String> wordleList;
-    private final String path = "src\\main\\resources\\Wordle.txt";
+    private final static String path = "src\\main\\resources\\Wordle.txt";
 
     public List<String> getListWord() {
         if (wordleList == null) {
